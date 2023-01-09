@@ -1,4 +1,3 @@
-# This is a sample Python script.
 import requests
 from bs4 import BeautifulSoup
 import time
@@ -6,13 +5,11 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 
 def get(url):
     response = requests.get(url)
     return response
+
 
 def send_email(msg):
     content = MIMEMultipart()  # 建立MIMEMultipart物件
@@ -32,7 +29,6 @@ def send_email(msg):
             print("Error message: ", e)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     ticket_name = [
         '全區(雙日聯票)',
